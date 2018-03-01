@@ -57,6 +57,13 @@ class League(object): # Class for player.
     self.strength = strength
     self.skill = skill
     
+# Checks for special inputs
+
+  def badPranks():
+    pass
+
+
+
 # Ranking Functions
 
   def rankUp(self): # Function increases user's rank by 1. 
@@ -247,8 +254,3 @@ load()
 
 
 print("Thanks for your time!")
-
-
-
-
-print("Chuck")
