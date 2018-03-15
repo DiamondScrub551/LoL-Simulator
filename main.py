@@ -6,6 +6,7 @@ import time
 import sys
 import json
 
+
 def clear(): # Function clears screen
   print('\n' * 50)
 
@@ -34,7 +35,7 @@ def checkPos(x): # Checks validity of position.
   return pos.index(x)
 
 # Global Variables
-
+"""
 global personName
 global personUsername
 global personRank
@@ -43,6 +44,9 @@ global personPos
 global personAttribute
 global personSkill
 global personStrength
+global step # The step of input (ex: step 1 is entering your name) - used for special input checks
+global refuseNum # For the Refusal path- used to track how many times the player has refused to comply
+"""
 	
 # Player Function 
 
@@ -59,9 +63,40 @@ class League(object): # Class for player.
     
 # Checks for special inputs
 
-  def badPranks():
-    pass
+  def prank()
+    if step == 1:
+      pass
+    else:
+      if step == 2:
+        pass
+      else:
+        if step == 3:
+          pass
+        else:
+          if step == 4:
+            pass
+          else:
+            if step == 5:
+              pass
+            else:
+              if step == 6:
+                pass
+              else:
+                pass
 
+# Special input functions
+
+def refusal()
+  if refuseNum == 1:
+    pass
+  else:
+    if refuseNum == 2:
+      pass
+    else:
+      if refuseNum == 3:
+        pass
+      else:
+        pass
 
 
 # Ranking Functions
@@ -97,7 +132,7 @@ def save():
   global personAttribute
   global personSkill
   global personStrength
-  with open("playerdata.py", "w") as text_file:
+  with open("playerdata.txt", "w") as text_file:
     print(f"personName = '{personName}'", file=text_file)
     print(f"personUsername = '{personUsername}'", file=text_file)
     print(f"personRank = '{personRank}'", file=text_file)
